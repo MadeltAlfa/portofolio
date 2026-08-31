@@ -18,7 +18,8 @@ jobs:
           # Exclude .git dan .github agar folder web bersih
           rsync -av --delete --exclude='.git' --exclude='.github' ./ /home/nund/webproject/src_web1/
 
-      - name: Reload Nginx Docker
+    - name: Reload Web Services
         run: |
-          cd /home/nund/webproject
-          docker compose exec -T nginx nginx -s reload
+          echo "🔄 Me-reload konfigurasi Nginx..."
+          # Reload langsung ke container Nginx alpine yang sedang running
+          docker exec $(docker ps -q --filter ancestor=nginx:alpine) nginx -s reload || true
