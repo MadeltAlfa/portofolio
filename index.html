@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portofolio Saya</title>
+      <meta name="description"
+            content="Portofolio profesional menampilkan karya Web Development, Data Science/Analytics, dan Internet of Things (IoT).">
+      <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+      <!-- HEADER -->
+      <header>
+            <div class="brand">
+                  <div class="logo">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <polyline points="16 18 22 12 16 6"></polyline>
+                              <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                  </div>
+                  <div class="brand-name">MY PORTOFOLIO</div>
+            </div>
+            <nav>
+                  <a href="#portofolio">Portofolio</a>
+                  <a href="#pengalaman">Pengalaman</a>
+                  <a href="#sertifikat">Sertifikat</a>
+                  <a href="cv.pdf" download class="cta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                              <polyline points="7 10 12 15 17 10"></polyline>
+                              <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        CV
+                  </a>
+            </nav>
+      </header>
+
+      <!-- HERO SECTION -->
+      <section class="hero" id="tentang">
+            <div class="hero-left">
+                  <div class="badge">
+                        <span class="badge-dot"></span>
+                        Selamat Datang Di Portofolio Saya
+                  </div>
+                  <h1 class="display">
+                        <span class="line1">Pengembang</span>
+                        <span class="line2">Teknologi</span>
+                        <span class="line3">Web, Data & IoT</span>
+                  </h1>
+                  <p class="hero-desc">
+                        Halo! Saya seorang developer yang berfokus membangun aplikasi Web interaktif, mengolah serta
+                        menganalisis Data, dan mengembangkan perangkat Internet of Things (IoT) yang cerdas dan
+                        terintegrasi.
+                  </p>
+                  <div class="hero-buttons">
+                        <!-- Instagram Button -->
+                        <a href="https://instagram.com" target="_blank" class="btn btn-secondary">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                              Instagram
+                        </a>
+                        <!-- GitHub Button -->
+                        <a href="https://github.com" target="_blank" class="btn btn-secondary">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                              </svg>
+                              GitHub
+                        </a>
+                        <!-- Download CV Button -->
+                        <a href="cv.pdf" download class="btn btn-primary">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                                    <polyline points="7 10 12 15 17 10"></polyline>
+                                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                              </svg>
+                              Download CV
+                        </a>
+                  </div>
+            </div>
+      </section>
+
+      <!-- TICKER BANNER (FULL-WIDTH HORIZONTAL LINE ACROSS PAGE) -->
+      <div class="ticker-wrap">
+            <div class="ticker" id="ticker"></div>
+      </div>
+
+      <!-- SECTION 2: PORTOFOLIO -->
+      <section class="section" id="portofolio">
+            <div class="section-head">
+                  <div>
+                        <div class="eyebrow">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                              </svg>
+                              01 / PORTOFOLIO
+                        </div>
+                        <h2 class="display">Karya & Proyek Terpilih</h2>
+                  </div>
+                  <p>Eksplorasi proyek-proyek yang telah saya kembangkan di bidang Web, Data Science, dan IoT.</p>
+            </div>
+
+            <!-- TAB FILTER -->
+            <div class="filter-nav">
+                  <button class="filter-btn active" onclick="filterSelection('all', this)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <rect x="3" y="3" width="7" height="7"></rect>
+                              <rect x="14" y="3" width="7" height="7"></rect>
+                              <rect x="14" y="14" width="7" height="7"></rect>
+                              <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        Semua Proyek
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('web', this)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                              <line x1="8" y1="21" x2="16" y2="21"></line>
+                              <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        1. Web Development
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('data', this)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="18" y1="20" x2="18" y2="10"></line>
+                              <line x1="12" y1="20" x2="12" y2="4"></line>
+                              <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        2. Data Science
+                  </button>
+                  <button class="filter-btn" onclick="filterSelection('iot', this)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
+                              <rect x="9" y="9" width="6" height="6"></rect>
+                              <line x1="9" y1="1" x2="9" y2="4"></line>
+                              <line x1="15" y1="1" x2="15" y2="4"></line>
+                              <line x1="9" y1="20" x2="9" y2="23"></line>
+                              <line x1="15" y1="20" x2="15" y2="23"></line>
+                              <line x1="20" y1="9" x2="23" y2="9"></line>
+                              <line x1="20" y1="15" x2="23" y2="15"></line>
+                              <line x1="1" y1="9" x2="4" y2="9"></line>
+                              <line x1="1" y1="15" x2="4" y2="15"></line>
+                        </svg>
+                        3. IoT (Internet of Things)
+                  </button>
+            </div>
+
+            <!-- CARDS GRID -->
+            <div class="cards">
+                  <!-- CARD WEB 1 -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Web Dev</span>
+                              <img src="assets/assets-web/meskendal/thumbnail-card.png" alt="Web Profile MES Kendal"
+                                    class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Web Profile MES Kendal</h3>
+                              <p class="desc">Website profil organisasi Masyarakat Ekonomi Syariah (MES) Kabupaten
+                                    Kendal dengan antarmuka modern, informasi kegiatan, dan sistem profil terintegrasi.
+                              </p>
+                              <div class="pills">
+                                    <span class="pill">Web Profile</span>
+                                    <span class="pill">Laravel</span>
+                                    <span class="pill">Breeze</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="https://meskendal.org/" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD DATA 1 -->
+                  <div class="card portfolio-card data">
+                        <div class="card-top data-bg">
+                              <span class="flag data">Data</span>
+                              <img src="assets/assets-data/comvis/intel-image-detection/thumbnail-card.png"
+                                    alt="Intel Image Classification & Computer Vision" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Intel Image Classification & Computer Vision</h3>
+                              <p class="desc">Model Deep Learning Computer Vision menggunakan Convolutional Neural
+                                    Network (CNN) untuk klasifikasi citra pemandangan alam secara akurat.</p>
+                              <div class="pills">
+                                    <span class="pill">Computer Vision</span>
+                                    <span class="pill">CNN / PyTorch</span>
+                                    <span class="pill">Deep Learning</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD IOT 1 -->
+                  <div class="card portfolio-card iot">
+                        <div class="card-top iot-bg">
+                              <span class="flag iot">IoT</span>
+                              <img src="assets/assets-iot/hidroponik/thumbnail-card.png"
+                                    alt="Smart Hidroponik Monitoring System" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Smart Hidroponik Monitoring System</h3>
+                              <p class="desc">Sistem pemantauan kadar nutrisi (PPM), pH air, suhu, serta otomatisasi
+                                    pompa air pada tanaman hidroponik berbasis ESP32 & IoT dashboard.</p>
+                              <div class="pills">
+                                    <span class="pill">ESP32</span>
+                                    <span class="pill">IoT Sensors</span>
+                                    <span class="pill">Automation</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD WEB 2 -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Web Dev</span>
+                              <img src="assets/assets-web/nurema/thumbnail-card.png"
+                                    alt="Nurema - Tes Penalaran Numerasi Multikontekstual" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>NUREMA — Tes Penalaran Numerasi</h3>
+                              <p class="desc">Aplikasi web Tes Penalaran Numerasi Multikontekstual berbasis digital yang
+                                    dirancang khusus untuk Mahasiswa PGMI.</p>
+                              <div class="pills">
+                                    <span class="pill">Web App</span>
+                                    <span class="pill">Laravel</span>
+                                    <span class="pill">Custom</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="https://nurema.my.id/" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD WEB 3 -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Web Dev</span>
+                              <img src="assets/assets-web/lms/thumbnail-card.png" alt="Learning Management System"
+                                    class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Learning Management System (LMS)</h3>
+                              <p class="desc">Platform sistem manajemen pembelajaran digital interaktif untuk
+                                    pengelolaan kelas online, materi edukasi, kuis, serta pemantauan progres belajar.
+                              </p>
+                              <div class="pills">
+                                    <span class="pill">LMS</span>
+                                    <span class="pill">Laravel</span>
+                                    <span class="pill">Custom E-Learning</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD WEB 4 -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Private Project</span>
+                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--coral)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                              <h3>SIKAWAN & Wisuda Unwahas</h3>
+                              <p class="desc">Sistem Informasi dan Manajemen Wisuda Universitas Wahid Hasyim (UNWAHAS)
+                                    untuk pengelolaan pendaftaran wisudawan, verifikasi berkas, dan pemrosesan data
+                                    akademik internal.</p>
+                              <div class="pills">
+                                    <span class="pill">Private Project</span>
+                                    <span class="pill">Laravel</span>
+                                    <span class="pill">Sistem Akademik</span>
+                              </div>
+                              <div class="card-footer">
+                                    <span class="pill"
+                                          style="background: var(--bg); border: 2px solid var(--ink); font-size: 11px;">System
+                                          Internal</span>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD WEB 5 -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Web Dev</span>
+                              <img src="assets/assets-web/helpdesk-unwahas/thumbnail-card.png" alt="Helpdesk Unwahas"
+                                    class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Helpdesk Unwahas</h3>
+                              <p class="desc">Sistem layanan bantuan (Helpdesk & Ticketing System) Universitas Wahid
+                                    Hasyim untuk penanganan tiket kendala teknis dan dukungan keluhan sivitas akademika.
+                              </p>
+                              <div class="pills">
+                                    <span class="pill">Helpdesk</span>
+                                    <span class="pill">Ticketing</span>
+                                    <span class="pill">Laravel</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD DATA 2 -->
+                  <div class="card portfolio-card data">
+                        <div class="card-top data-bg">
+                              <span class="flag data">Data</span>
+                              <img src="assets/assets-data/machine-learning/ihsg-predictor/thumbnail-card.png"
+                                    alt="IHSG Machine Learning Predictor" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>IHSG Machine Learning Predictor</h3>
+                              <p class="desc">Aplikasi Machine Learning berbasis web yang dideploy di Hugging Face
+                                    Spaces untuk memprediksi pergerakan Indeks Harga Saham Gabungan (IHSG).</p>
+                              <div class="pills">
+                                    <span class="pill">Machine Learning</span>
+                                    <span class="pill">Python</span>
+                                    <span class="pill">Hugging Face</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="https://huggingface.co/spaces/nanda096/ihsg-machine-learning"
+                                          target="_blank" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD DATA 3 -->
+                  <div class="card portfolio-card data">
+                        <div class="card-top data-bg">
+                              <span class="flag data">Data</span>
+                              <img src="assets/assets-data/big-data/crawling-ihsg/thumbnail-card.png" alt="Big Data Crawling & Scraping IHSG" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Big Data Crawling & Scraping IHSG</h3>
+                              <p class="desc">Sistem automatisasi web crawling & data scraping skala besar untuk ekstraksi data historis transaksi dan harga saham IHSG.</p>
+                              <div class="pills">
+                                    <span class="pill">Big Data</span>
+                                    <span class="pill">Web Scraping</span>
+                                    <span class="pill">Python</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD DATA 4 -->
+                  <div class="card portfolio-card data">
+                        <div class="card-top data-bg">
+                              <span class="flag data">Data</span>
+                              <img src="assets/assets-data/comvis/deteksi-jarak-kendaraan-yolov8/thumbnail-card.png" alt="Deteksi Jarak Kendaraan YOLOv8" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>Deteksi Jarak Kendaraan (YOLOv8)</h3>
+                              <p class="desc">Sistem deteksi objek dan estimasi jarak antar kendaraan real-time berbasis algoritma YOLOv8 dan Computer Vision untuk analisis keselamatan lalu lintas.</p>
+                              <div class="pills">
+                                    <span class="pill">YOLOv8</span>
+                                    <span class="pill">Computer Vision</span>
+                                    <span class="pill">Object Detection</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD IOT 2 -->
+                  <div class="card portfolio-card iot">
+                        <div class="card-top iot-bg">
+                              <span class="flag iot">IoT</span>
+                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--lime-alt)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                              <h3>Smart Home Security System</h3>
+                              <p class="desc">Sistem keamanan rumah pintar menggunakan RFID, sensor PIR motion, dan
+                                    notifikasi otomatis via Telegram Bot.</p>
+                              <div class="pills">
+                                    <span class="pill">Arduino</span>
+                                    <span class="pill">NodeMCU</span>
+                                    <span class="pill">C++</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD JAVA OOP -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Java OOP</span>
+                              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--lime-alt)"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                              </svg>
+                        </div>
+                        <div class="card-body">
+                              <h3>Sistem Manajemen Apotek (Java OOP)</h3>
+                              <p class="desc">Aplikasi desktop manajemen apotek berbasis Object-Oriented Programming
+                                    (OOP) Java untuk pengelolaan inventaris obat, transaksi kasir, dan laporan stok.</p>
+                              <div class="pills">
+                                    <span class="pill">Java</span>
+                                    <span class="pill">OOP</span>
+                                    <span class="pill">Desktop App</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="https://github.com/MadeltAlfa/Java_Apotek_Sistem" target="_blank"
+                                          class="detail-btn">
+                                          Lihat Repository
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD AUTOMATION -->
+                  <div class="card portfolio-card web data">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Automation</span>
+                              <img src="assets/assets-automation/hacktiv8/thumbnail-card.png"
+                                    alt="AI Productivity & AI API Integration" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>AI Productivity & AI API Integration</h3>
+                              <p class="desc">Sistem otomatisasi alur kerja (workflow automation) berbasis N8N dan
+                                    integrasi API AI untuk peningkatan efisiensi operasional dan automasi tugas harian.
+                              </p>
+                              <div class="pills">
+                                    <span class="pill">N8N</span>
+                                    <span class="pill">AI API</span>
+                                    <span class="pill">Workflow Automation</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CARD MOBILE POS -->
+                  <div class="card portfolio-card web">
+                        <div class="card-top web-bg">
+                              <span class="flag web">Mobile App</span>
+                              <img src="assets/assets-mobile/pos-system/thumbnail-card.png" alt="POS System Mobile App" class="card-img">
+                        </div>
+                        <div class="card-body">
+                              <h3>POS System Mobile App</h3>
+                              <p class="desc">Aplikasi kasir & Point of Sale (POS) mobile untuk transaksi penjualan cepat, manajemen produk, dan pencetakan resi toko.</p>
+                              <div class="pills">
+                                    <span class="pill">Mobile App</span>
+                                    <span class="pill">POS System</span>
+                                    <span class="pill">Kasir Digital</span>
+                              </div>
+                              <div class="card-footer">
+                                    <a href="#" class="detail-btn">
+                                          Lihat Detail
+                                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                                                stroke-linejoin="round">
+                                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                          </svg>
+                                    </a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- SECTION 3: PENGALAMAN -->
+      <section class="section" id="pengalaman">
+            <div class="section-head">
+                  <div>
+                        <div class="eyebrow">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                              </svg>
+                              02 / PENGALAMAN
+                        </div>
+                        <h2 class="display">Pengalaman Kerja & Magang</h2>
+                  </div>
+                  <p>Rekam jejak pengalaman profesional, magang industri, serta kontribusi dalam proyek tim.</p>
+            </div>
+
+            <div class="experience-list">
+                  <!-- EXP CARD 1: MAGANG -->
+                  <div class="exp-card">
+                        <div class="exp-meta">
+                              <span class="exp-period">MAGANG INDUSTRI</span>
+                              <div class="exp-company">UPT TIK Unwahas</div>
+                              <div class="exp-location">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                          <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Semarang (Hybrid)
+                              </div>
+                        </div>
+                        <div class="exp-details">
+                              <h3>Web Developer</h3>
+                              <p>Bertanggung jawab dalam merancang antarmuka web, membantu pengolahan data operasional
+                                    harian, serta integrasi modul IoT internal perusahaan.</p>
+                              <ul class="exp-highlights">
+                                    <li>Mengembangkan 5+ komponen UI responsif menggunakan JavaScript & Tailwind CSS
+                                          untuk sistem internal.</li>
+                                    <li>Melakukan pembersihan data (*data cleaning*) dan analisis tren bulanan
+                                          menggunakan Python & Pandas.</li>
+                                    <li>Berkolaborasi dengan tim engineering dalam integrasi REST API dengan sensor
+                                          pemantau hardware.</li>
+                              </ul>
+                        </div>
+                  </div>
+
+                  <!-- EXP CARD 2 -->
+                  <div class="exp-card">
+                        <div class="exp-meta">
+                              <span class="exp-period">Project Hidroponik</span>
+                              <div class="exp-company">Lab Computer Vision</div>
+                              <div class="exp-location">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                          <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Semarang
+                              </div>
+                        </div>
+                        <div class="exp-details">
+                              <h3>IoT & Web Integration Specialist</h3>
+                              <p>Membangun sistem pemantauan suhu & kelembapan berbasis mikrokontroler yang terintegrasi
+                                    langsung dengan dashboard statistik berbasis web.</p>
+                              <ul class="exp-highlights">
+                                    <li>Merancang arsitektur pengiriman data sensor dari ESP8266 ke server MQTT.</li>
+                                    <li>Membuat web dashboard interaktif dengan Chart.js untuk menampilkan grafik data
+                                          real-time.</li>
+                              </ul>
+                        </div>
+                  </div>
+
+                  <div class="exp-card">
+                        <div class="exp-meta">
+                              <span class="exp-period">Pengajar</span>
+                              <div class="exp-company">Lab Computer Vision</div>
+                              <div class="exp-location">
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                          stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                          <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                          <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                    Semarang
+                              </div>
+                        </div>
+                        <div class="exp-details">
+                              <h3>N8N Automation</h3>
+                              <p>Membangun sistem pemantauan suhu & kelembapan berbasis mikrokontroler yang terintegrasi
+                                    langsung dengan dashboard statistik berbasis web.</p>
+                              <ul class="exp-highlights">
+                                    <li>Merancang arsitektur pengiriman data sensor dari ESP8266 ke server MQTT.</li>
+                                    <li>Membuat web dashboard interaktif dengan Chart.js untuk menampilkan grafik data
+                                          real-time.</li>
+                              </ul>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- SECTION 4: SERTIFIKAT -->
+      <section class="section" id="sertifikat">
+            <div class="section-head">
+                  <div>
+                        <div class="eyebrow">
+                              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="8" r="7"></circle>
+                                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                              </svg>
+                              03 / SERTIFIKAT
+                        </div>
+                        <h2 class="display">Sertifikasi & Lisensi</h2>
+                  </div>
+                  <p>Sertifikat kompetensi resmi yang didapatkan dari lembaga pelatihan dan platform edukasi teknologi
+                        terpercaya.</p>
+            </div>
+
+            <div class="cert-grid">
+                  <!-- CERT 1 -->
+                  <div class="cert-card">
+                        <div class="cert-top">
+                              <span class="flag web">Dicoding</span>
+                              <img src="assets/assets-certificate/dicoding/memulai-pemrograman-dengan-python.png"
+                                    alt="Memulai Pemrograman dengan Python" class="cert-img">
+                        </div>
+                        <div class="cert-body">
+                              <div>
+                                    <span class="cert-issuer">Dicoding Academy</span>
+                                    <h3 class="cert-title" style="margin-top: 6px;">Memulai Pemrograman dengan Python
+                                    </h3>
+                              </div>
+                              <div class="cert-meta">
+                                    <a href="assets/assets-certificate/dicoding/memulai-pemrograman-dengan-python.png"
+                                          target="_blank" class="detail-btn"
+                                          style="padding: 8px 14px; font-size: 12px; margin-top: 8px;">Lihat Full
+                                          Sertifikat</a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CERT 2 -->
+                  <div class="cert-card">
+                        <div class="cert-top">
+                              <span class="flag data">Hacktiv8</span>
+                              <img src="assets/assets-certificate/hacktiv8/AI-Productivity-and-AI-API-Integration.png"
+                                    alt="AI Productivity & AI API Integration" class="cert-img">
+                        </div>
+                        <div class="cert-body">
+                              <div>
+                                    <span class="cert-issuer">Hacktiv8 Indonesia</span>
+                                    <h3 class="cert-title" style="margin-top: 6px;">AI Productivity & AI API Integration
+                                    </h3>
+                              </div>
+                              <div class="cert-meta">
+                                    <a href="assets/assets-certificate/hacktiv8/AI-Productivity-and-AI-API-Integration.png"
+                                          target="_blank" class="detail-btn"
+                                          style="padding: 8px 14px; font-size: 12px; margin-top: 8px;">Lihat Full
+                                          Sertifikat</a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <!-- CERT 3 -->
+                  <div class="cert-card">
+                        <div class="cert-top">
+                              <span class="flag data">Dicoding</span>
+                              <img src="assets/assets-certificate/dicoding/Belajar-Dasar-Structured-Query-Language.png"
+                                    alt="Belajar Dasar Structured Query Language (SQL)" class="cert-img">
+                        </div>
+                        <div class="cert-body">
+                              <div>
+                                    <span class="cert-issuer">Dicoding Academy</span>
+                                    <h3 class="cert-title" style="margin-top: 6px;">Belajar Dasar Structured Query
+                                          Language (SQL)</h3>
+                              </div>
+                              <div class="cert-meta">
+                                    <a href="assets/assets-certificate/dicoding/Belajar-Dasar-Structured-Query-Language.png"
+                                          target="_blank" class="detail-btn"
+                                          style="padding: 8px 14px; font-size: 12px; margin-top: 8px;">Lihat Full
+                                          Sertifikat</a>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer>
+            <div class="footer-content">
+                  <div class="footer-brand">
+                        <h2 class="display">Mari Bekerjasama!</h2>
+                        <p>Apakah Anda memiliki proyek menarik atau peluang kerja di bidang Web, Data, atau IoT? Jangan
+                              ragu untuk menghubungi saya.</p>
+                  </div>
+                  <div class="footer-socials">
+                        <a href="https://github.com" target="_blank" class="btn">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                              </svg>
+                              GitHub
+                        </a>
+                        <a href="https://instagram.com" target="_blank" class="btn">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                              </svg>
+                              Instagram
+                        </a>
+                        <a href="mailto:email@domain.com" class="btn btn-accent">
+                              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                              </svg>
+                              Email
+                        </a>
+                  </div>
+            </div>
+
+            <div class="footer-bottom">
+                  <div>© 2026 Portofolio Saya. All rights reserved. Neubrutalism Design.</div>
+                  <a href="#tentang" class="back-to-top">
+                        Kembali Ke Atas
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="12" y1="19" x2="12" y2="5"></line>
+                              <polyline points="5 12 12 5 19 12"></polyline>
+                        </svg>
+                  </a>
+            </div>
+      </footer>
+
+      <!-- JAVASCRIPT FOR TICKER & PORTFOLIO FILTER -->
+      <script>
+            // Populate Ticker items
+            const items = ["WEB DEVELOPMENT", "DATA SCIENCE", "INTERNET OF THINGS", "JAVASCRIPT", "PYTHON", "ARDUINO / ESP32", "REACT", "SQL", "MACHINE LEARNING", "MQTT", "REST API", "GIT"];
+            const ticker = document.getElementById('ticker');
+            const content = items.map(i => `<span>${i}</span>`).join('');
+            ticker.innerHTML = content + content;
+
+            // Portfolio Category Filter Logic
+            function filterSelection(category, btnElement) {
+                  const cards = document.getElementsByClassName("portfolio-card");
+                  const buttons = document.getElementsByClassName("filter-btn");
+
+                  // Remove active class from all buttons
+                  for (let i = 0; i < buttons.length; i++) {
+                        buttons[i].classList.remove("active");
+                  }
+
+                  // Add active class to clicked button
+                  if (btnElement) {
+                        btnElement.classList.add("active");
+                  }
+
+                  // Show/Hide cards according to category
+                  for (let i = 0; i < cards.length; i++) {
+                        if (category === 'all' || cards[i].classList.contains(category)) {
+                              cards[i].style.display = "flex";
+                        } else {
+                              cards[i].style.display = "none";
+                        }
+                  }
+            }
+      </script>
+
+</body>
+
+</html>
