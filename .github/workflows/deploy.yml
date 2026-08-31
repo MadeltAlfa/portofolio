@@ -1,0 +1,24 @@
+name: Auto Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Sync Code to Web1
+        run: |
+          # Exclude .git dan .github agar folder web bersih
+          rsync -av --delete --exclude='.git' --exclude='.github' ./ /home/nund/webproject/src_web1/
+
+      - name: Reload Nginx Docker
+        run: |
+          cd /home/nund/webproject
+          docker compose exec -T nginx nginx -s reload
