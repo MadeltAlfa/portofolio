@@ -1,4 +1,4 @@
-name: Auto Deploy to VPS
+name: Deploy Web to VPS
 
 on:
   push:
@@ -13,13 +13,20 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Sync Code to Web1
+      - name: Sync Source Code
         run: |
-          # Exclude .git dan .github agar folder web bersih
-          rsync -av --delete --exclude='.git' --exclude='.github' ./ /home/nund/webproject/src_web1/
+          echo "🚀 Sinkronisasi source code ke webproject..."
+          # Salin folder web dengan aman
+          [ -d "./src_web1" ] && rsync -av --delete ./src_web1/ /home/nund/webproject/src_web1/ || true
+          [ -d "./src_web2" ] && rsync -av --delete ./src_web2/ /home/nund/webproject/src_web2/ || true
 
-    - name: Reload Web Services
+      - name: Reload Nginx (Optional)
         run: |
-          echo "🔄 Me-reload konfigurasi Nginx..."
-          # Reload langsung ke container Nginx alpine yang sedang running
-          docker exec $(docker ps -q --filter ancestor=nginx:alpine) nginx -s reload || true
+          echo "🔄 Memeriksa dan me-reload Nginx jika ada..."
+          CONTAINER_ID=$(docker ps -q --filter ancestor=nginx:alpine | head -n 1)
+          if [ -n "$CONTAINER_ID" ]; then
+            docker exec "$CONTAINER_ID" nginx -s reload || true
+          fi
+
+      - name: Deployment Finished
+        run: echo "✅ Deploy berhasil diselesaikan!"
